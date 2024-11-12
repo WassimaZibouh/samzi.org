@@ -1,15 +1,35 @@
 <!DOCTYPE html>
-<html>
+<html lang="nl">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Pagina</title>
     <meta charset="UTF-8" />
     <script src="https://kit.fontawesome.com/df1795601b.js" crossorigin="anonymous"></script>
+    <style>
+        /* Basisstijl voor responsieve afbeelding */
+        img {
+            max-width: 100%;  /* Zorgt ervoor dat de afbeelding maximaal de breedte van de container is */
+            height: auto;     /* Houdt de verhouding van de afbeelding vast */
+        }
+
+        /* Centreer tekst en maak iconen responsief */
+        p {
+            text-align: center;
+            font-size: 1.5em; /* Grotere tekst op desktop */
+        }
+
+        /* Media query voor kleinere schermen (smartphones) */
+        @media (max-width: 600px) {
+            p {
+                font-size: 1.2em; /* Kleinere tekst op mobiele apparaten */
+            }
+        }
+    </style>
 </head>
 <body>
-    </style>
-    <DIV ALIGN="center"><img src="Logo samzi transparant.png" ALT="logo" width="600" height="600"></DIV>
-    <p style="text-align: center;">COMING SOON... <i class="fa-regular fa-hourglass-half fa-spin-pulse"></i></p>
-
+    <div align="center">
+        <img src="Logo samzi transparant.png" alt="logo">
+    </div>
+    <p>COMING SOON... <i class="fa-regular fa-hourglass-half fa-spin-pulse"></i></p>
 </body>
 </html>
