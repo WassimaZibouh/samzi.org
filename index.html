@@ -4,37 +4,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SAMZI</title>
     <meta charset="UTF-8" />
-     <i class="fa-solid fa-envelope" style="color: #0d0c0c;"></i> <p></p>
-    <style>
-        /* Basisstijl voor responsieve afbeelding */
+    <script src="https://kit.fontawesome.com/df1795601b.js" crossorigin="anonymous"></script>
+     <style>
+        /* Container om afbeelding en tekst te centreren */
+        .center-container {
+            display: flex;           /* Gebruik Flexbox */
+            flex-direction: column; /* Stapel items verticaal */
+            align-items: center;    /* Centreer afbeelding en tekst horizontaal */
+            justify-content: center; /* Centreer container verticaal */
+            height: 100vh;          /* Vul het scherm volledig */
+            text-align: center;     /* Zorg dat tekst gecentreerd wordt */
+            margin: 0;              /* Verwijder standaard marges */
+            background-color: #f9f9f9; /* Optionele achtergrondkleur */
+        }
+
+        /* Stijl voor de afbeelding */
         img {
-            max-width: 100%;  /* Zorgt ervoor dat de afbeelding maximaal de breedte van de container is */
-            height: auto;     /* Houdt de verhouding van de afbeelding vast */
+            max-width: 50%;         /* Maximaal 50% van de breedte van de container */
+            height: auto;           /* Houdt de oorspronkelijke verhoudingen vast */
         }
 
-        /* Centreer tekst en maak iconen responsief */
-        p {
-            text-align: center;
-            font-size: 1.5em; /* Grotere tekst op desktop */
-        }
-
-        /* Media query voor kleinere schermen (smartphones) */
-        @media (max-width: 600px) {
-            p {
-                font-size: 1.2em; /* Kleinere tekst op mobiele apparaten */
-            }
+        /* Stijl voor de tekst */
+        .caption {
+            font-size: 1.2em;       /* Grootte van de tekst */
+            color: #333;            /* Tekstkleur */
+            margin-top: 10px;       /* Ruimte boven de tekst */
         }
     </style>
 </head>
 <body>
-    <div align="center">
+    <div class="center-container">
         <img src="Logo samzi transparant.png" alt="logo">
-    </div>
-</head>
-<body>
-    <div align="center">
-        <img src="Logo samzi transparant.png" alt="logo">
-    </div>
-    <p>COMING SOON... <i class="fa-regular fa-hourglass-half fa-spin-pulse"></i></p>
+        <p class="caption">COMING SOON...<i class="fa-regular fa-hourglass-half fa-spin-pulse"></i></p>
 </body>
 </html>
